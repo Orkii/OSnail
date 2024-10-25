@@ -1,0 +1,22 @@
+package stand;
+
+import java.awt.Graphics;
+import java.awt.Shape;
+import java.awt.geom.Ellipse2D;
+
+public class SnakeHead extends SnakePart {
+	
+	protected Shape bBody;
+	
+	public SnakeHead () {
+		super();	
+		bBody = new Ellipse2D.Double(0, 0, 25, 25);
+	}
+	
+	public void paint(Graphics my_picture) {
+		super.paint(my_picture);
+		
+		
+		
+	}
+}

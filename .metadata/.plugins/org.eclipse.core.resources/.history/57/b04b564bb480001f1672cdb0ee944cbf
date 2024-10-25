@@ -1,0 +1,8 @@
+package stand;
+
+public class Vector2D {
+	
+	
+	int x;
+	int y;
+}

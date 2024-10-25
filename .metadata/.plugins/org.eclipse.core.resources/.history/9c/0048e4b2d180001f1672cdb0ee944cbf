@@ -1,0 +1,16 @@
+package stand;
+
+import java.awt.Graphics;
+
+public class SnakeHead extends SnakePart {
+	
+	public SnakeHead () {
+		super();	
+	}
+	
+	public void paint(Graphics my_picture) {
+		super.paint(my_picture);
+		
+		
+	}
+}

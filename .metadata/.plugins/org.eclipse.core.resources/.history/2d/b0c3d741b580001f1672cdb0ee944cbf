@@ -1,0 +1,15 @@
+package stand;
+
+import java.awt.Graphics;
+
+public class SnakePart extends GameObject {
+	
+	private Ellipse2D myEllipse1 = new Ellipse2Dmy
+	
+	@Override
+	public void paint(Graphics my_picture) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

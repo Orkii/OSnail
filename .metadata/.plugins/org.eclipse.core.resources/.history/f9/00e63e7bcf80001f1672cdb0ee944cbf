@@ -1,0 +1,12 @@
+package stand;
+
+public class SnakeHead extends SnakePart {
+	
+	public SnakeHead () {
+		super();	
+	}
+	
+	public paint() {
+		super();
+	}
+}

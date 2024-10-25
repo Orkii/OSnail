@@ -1,0 +1,5 @@
+package stand;
+
+abstract public class GameObject {
+	public abstract void paint();
+}

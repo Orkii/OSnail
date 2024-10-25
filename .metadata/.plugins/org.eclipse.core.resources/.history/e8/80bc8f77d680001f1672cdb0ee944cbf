@@ -1,0 +1,36 @@
+package stand;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.geom.Ellipse2D;
+
+public class SnakeHead extends SnakePart {
+	
+	protected Shape bBody;
+	protected int eyeSize = 12;
+	protected int eyeOffset = 12;
+	protected double dir = 1.5;
+	
+	public SnakeHead () {
+		super();	
+		bBody = new Ellipse2D.Double(25, 25, 25, 25);
+	}
+	@Override
+	public void paint(Graphics my_picture) {
+		super.paint(my_picture);
+		
+		Graphics2D g2 = (Graphics2D) my_picture;
+		my_picture.setColor(Color.GREEN);
+		g2.draw(bBody);
+		
+		my_picture.fillOval( 				
+				(int)(body.getBounds2D().getCenterX() + (Math.cos(dir) * eyeOffset)-eyeSize/2),
+				(int)(body.getBounds2D().getCenterY() + (-Math.sin(dir) * eyeOffset)-eyeSize/2), 
+				(int)(eyeSize),
+				(int)(eyeSize));
+		
+		
+	}
+}

@@ -1,0 +1,30 @@
+package stand;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.util.ArrayList;
+
+public class Snake extends GameObject {
+	
+	
+	ArrayList<SnakePart> parts = new ArrayList<SnakePart>();
+	SnakeHead head;
+	
+	public Snake(){
+		parts.add(new SnakePart());
+		head = new SnakeHead();
+	}
+	
+	@Override
+	public void paint(Graphics my_picture) {
+		// TODO Auto-generated method stub
+		//my_picture.setColor(Color.RED);
+		//my_picture.drawOval(90, 50, 200, 200);
+	
+		for (SnakePart item : parts) {
+			item.paint(my_picture);
+		}
+		
+	}
+
+}

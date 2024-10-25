@@ -1,0 +1,11 @@
+package stand;
+
+public class Snake extends GameObject {
+
+	@Override
+	public void paint() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

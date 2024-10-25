@@ -1,0 +1,27 @@
+package stand;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Shape;
+import java.awt.geom.Ellipse2D;
+
+public class SnakeHead extends SnakePart {
+	
+	protected Shape bBody;
+	
+	public SnakeHead () {
+		super();	
+		bBody = new Ellipse2D.Double(25, 25, 25, 25);
+	}
+	@Override
+	public void paint(Graphics my_picture) {
+		
+		
+		//Graphics2D g2 = (Graphics2D) my_picture;
+		// TODO Auto-generated method stub
+		//my_picture.setColor(Color.GREEN);
+		//g2.draw(bBody);
+		//super.paint(my_picture);
+	}
+}

@@ -1,0 +1,8 @@
+package stand;
+
+import java.awt.Graphics;
+
+abstract public class GameObject {
+	private Shape body;
+	public abstract void paint(Graphics my_picture);
+}

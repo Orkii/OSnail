@@ -1,0 +1,28 @@
+package stand;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+
+public class SnakePart extends GameObject {
+	
+	const private Vector2D size = new Vector2D(50, 50);
+	
+
+	
+	SnakePart(){
+		super();
+		body = new Ellipse2D.Double(0, 0, size.x, size.y);
+		
+	}
+	
+	@Override
+	public void paint(Graphics my_picture) {
+		Graphics2D g2 = (Graphics2D) my_picture;
+		// TODO Auto-generated method stub
+		my_picture.setColor(Color.RED);
+		g2.draw(body);
+	}
+
+}

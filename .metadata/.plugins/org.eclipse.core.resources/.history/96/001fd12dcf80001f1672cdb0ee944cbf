@@ -1,0 +1,18 @@
+package stand;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
+public class Snake extends GameObject {
+	
+	
+	
+	
+	@Override
+	public void paint(Graphics my_picture) {
+		// TODO Auto-generated method stub
+		my_picture.setColor(Color.RED);
+		my_picture.drawOval(90, 50, 200, 200);
+	}
+
+}
